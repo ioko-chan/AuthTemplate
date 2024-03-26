@@ -32,7 +32,7 @@ dependencies {
 
 	implementation 'com.auth0:java-jwt:4.4.0'
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
-	implementation 'org.testng:testng:7.1.0'
+//	implementation 'org.testng:testng:7.7.0'
 
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.postgresql:postgresql'
@@ -43,10 +43,4 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
-}
-
-flyway {
-	url = 'jdbc:postgresql://authtemplate-db-1:5432/auth'
-	user = 'POSTGRES'
-	password = '1234'
 }
